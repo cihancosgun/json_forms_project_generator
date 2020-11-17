@@ -79,10 +79,11 @@ function showForm(projectId, formId) {
 
 function saveFormData() {
     let data = bf.getData();
-    console.log(data);
     let project = projects[createFormProjectId];
     let form = project.childs[createFormFormId];
     form.data = data;
+    console.log(projects);
+    alert(JSON.stringify(projects));
 }
 
 var jsonSchema = {
